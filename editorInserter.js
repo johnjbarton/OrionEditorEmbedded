@@ -22,7 +22,7 @@ var editorInserter = {
 
   createEditor: function(parentElement, opt_height) {      
       parentElement.innerHTML = editorContainerHTML;
-      parentElement.querySelector('.editor').style.height= opt_height || '300px';
+      parentElement.querySelector('.editor').style.height= opt_height || '100%';
       this.orionEditor = new OrionEditor(parentElement.firstElementChild);
       this.orionEditor.setInput('untitled.js', null, 'function foo() {\n  return 1;\n}');
       return this.orionEditor;
