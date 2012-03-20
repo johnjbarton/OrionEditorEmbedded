@@ -39,10 +39,12 @@ side integration. This is a two step process:
    in the Orion UI
    
 Architecture:
-  editorPlugin.html orion.page.content plugin, calls editor.html
-  editor.html editor in a web page, tests editorInserter.js
-  editorInserter.js API for installing OroinEditorEmbedded in an app
-  OrionEditor.js modified Orion embeddededitor.js, add stuff here to
+  editorPlugin.html     orion.page.content plugin, calls editor.html
+  editor.html           editor in a web page, tests editorInserter.js
+  requireConfig.js      require.js path setup, shared
+  requireOverrides.js   Main to pull in modules, specific to editor.html
+  editorInserter.js     API for installing OroinEditorEmbedded in an app
+  OrionEditor.js        modified Orion embeddededitor.js, add stuff here to
     make this editor act like Orion's edit.html
   orionAssembly.js aggregate a ton of files onto a couple of objects
   
