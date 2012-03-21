@@ -5,7 +5,7 @@
 
 require({
     paths: {
-      'MetaObject': '../MetaObject',
+      'MetaObject': '../../../MetaObject',
       'OrionEditorEmbedded': '../../OrionEditorEmbedded',
       'orion': '../../../orion.client/bundles/org.eclipse.orion.client.editor/web/orion',
       'text': '../../../MetaObject/requirejs/text',
