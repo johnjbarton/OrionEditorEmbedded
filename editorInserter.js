@@ -8,7 +8,7 @@ define(['OrionEditorEmbedded/OrionEditor'], function(OrionEditor) {
 'use strict';
 
 var editorContainerHTML =
-  "  <div class='editor' id='editor'>" +
+  "  <div class='orion-editor' id='editor'>" +
   "  </div>" +
   "  <div class='contentAssist' id='contentAssist'>";
 
@@ -22,7 +22,7 @@ var editorInserter = {
 
   createEditor: function(parentElement, opt_height) {      
       parentElement.innerHTML = editorContainerHTML;
-      parentElement.querySelector('.editor').style.height= opt_height || '100%';
+      parentElement.querySelector('.orion-editor').style.height= opt_height || '100%';
       this.orionEditor = new OrionEditor(parentElement.firstElementChild);
       this.orionEditor.setInput('untitled.js', null, 'function foo() {\n  return 1;\n}');
       return this.orionEditor;
