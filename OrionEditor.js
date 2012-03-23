@@ -124,7 +124,6 @@ function(require,                               orion,                       Rev
     };
     
     orion.editor.Editor.call(this, config);
-    this.installTextView();
   }
 
   OrionEditor.prototype = orion.editor.Editor.prototype;
